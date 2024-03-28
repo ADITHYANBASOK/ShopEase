@@ -7,10 +7,10 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
 function Card({ item, linkTo }) {
-    const { dispatch } = useCart(); // Get the dispatch function from the useCart hook
+    
+    const { dispatch } = useCart(); 
 
     const handleAddToCart = () => {
-        // Dispatch an action to add the product to the cart
         dispatch({ type: 'ADD_TO_CART', payload: item });
         toast.success('Item added to cart');
 

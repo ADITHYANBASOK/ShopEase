@@ -8,9 +8,8 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
 function Cart() {
-    const { state, dispatch } = useCart(); // Get the cart state using the useCart hook
+    const { state, dispatch } = useCart(); 
 
-    // Log the cart state to the console
     console.log(state);
     const handleRemoveFromCart = (productId) => {
         dispatch({ type: 'REMOVE_FROM_CART', payload: productId });
