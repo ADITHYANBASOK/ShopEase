@@ -13,7 +13,6 @@ function App() {
     <BrowserRouter>
     <Routes>
       <Route path='/' element={<AllProduct/>}/>
-      <Route path='/ShopEase' element={<AllProduct/>}/>
       <Route path='/users' element={<Userlist/>}/>
       <Route path='/categories' element={<CategoryListPage/>}/>
       <Route path='/products/:id' element={<SingleProductPage/>}/>
