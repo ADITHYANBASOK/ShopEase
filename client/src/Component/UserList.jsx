@@ -25,7 +25,7 @@ function UserList() {
     <>
     <div>
         <Heading heading="Users List"/>
-      <div className="row mt-5 mgq" style={{margin:'20px'}}>
+      <div className="row mt-5 margin1" >
         {users.map(user => (
           <div className="col-md-3 mb-3 col-sm-6" key={user.id}>
             <div className="card">

@@ -6,7 +6,7 @@ function Card({ item, linkTo }) {
   return (
     <>
 <div className="card">
-  <img src={item.images} className="card-img-top" alt={item.name} />
+  <img src={item.images} className="card-img-top img-wh" alt={item.name} />
   <div className="card-body">
     <h5 className="card-title">{item.title}</h5>
     <p className="card-text">Price: ${item.price}</p>

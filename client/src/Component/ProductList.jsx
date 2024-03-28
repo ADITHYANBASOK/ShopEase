@@ -25,7 +25,7 @@ function ProductList() {
     <>
     <div>
         <Heading heading='All Products'/>
-      <div className="row margin">
+      <div className="row margin1">
       {products.map(product => (
           <div className="col-md-4 mb-3 col-sm-6" key={product.id}>
             <Card item={product} linkTo={`/products/${product.id}`} />

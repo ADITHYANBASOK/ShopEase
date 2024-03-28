@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
+import '../static/product.css'
 import Card from './Card';
 import Heading from './Heading';
 
@@ -30,7 +31,7 @@ const [data,setData]=useState([])
     <>
       <div>
       <Heading heading={data.name}/>
-      <div className="row">
+      <div className="row margin1">
       {products.map(product => (
           <div className="col-md-4 mb-3" key={product.id}>
             <Card item={product} linkTo={`/products/${product.id}`} />

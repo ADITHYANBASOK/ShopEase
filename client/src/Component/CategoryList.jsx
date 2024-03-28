@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import Heading from './Heading';
 function CategoryList() {
     const [categories, setCategories] = useState([]);
 
@@ -23,8 +24,8 @@ function CategoryList() {
   return (
     <>
 <div>
-  <h1>Category List</h1>
-  <div className="row">
+    <Heading heading="Categories"/>
+  <div className="row margin1">
     {categories.slice(0, 5).map(category => (
       <div className="col-md-4 mb-3" key={category.id}>
         <div className="card">
