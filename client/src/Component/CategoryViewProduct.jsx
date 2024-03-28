@@ -31,7 +31,7 @@ const [data,setData]=useState([])
     <>
       <div>
       <Heading heading={data.name}/>
-      <div className="row margin1">
+      <div className="row margin-2" style={{margin:"20px"}}>
       {products.map(product => (
           <div className="col-md-4 mb-3" key={product.id}>
             <Card item={product} linkTo={`/products/${product.id}`} />

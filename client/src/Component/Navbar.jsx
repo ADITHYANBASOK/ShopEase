@@ -8,7 +8,7 @@ function Navbar() {
       <header>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
-          <NavLink className="navbar-brand" to="/">Hidden brand</NavLink>
+          <NavLink className="navbar-brand" to="/">ShopEase</NavLink>
           <div className="d-flex justify-content-center flex-grow-1">
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
@@ -22,7 +22,7 @@ function Navbar() {
                   <NavLink activeClassName="active" className="nav-link" to="/categories">Categories</NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink activeClassName="active" className="nav-link" to="/products">Product</NavLink>
+                  <NavLink activeClassName="active" className="nav-link" to="/cart">Cart</NavLink>
                 </li>
                 <li className="nav-item">
                   <NavLink activeClassName="active" className="nav-link" to="/users">Users</NavLink>

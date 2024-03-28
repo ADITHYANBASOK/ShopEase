@@ -25,7 +25,7 @@ function CategoryList() {
     <>
 <div>
     <Heading heading="Categories"/>
-  <div className="row margin1">
+  <div className="row margin-2" style={{margin:"20px"}}>
     {categories.slice(0, 5).map(category => (
       <div className="col-md-4 mb-3" key={category.id}>
         <div className="card">

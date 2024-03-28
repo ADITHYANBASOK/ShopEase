@@ -1,7 +1,21 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
+import { useCart } from '../store/CartContext.js';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 function SingleProductView() {
+    
+    const { dispatch } = useCart(); // Get the dispatch function from the useCart hook
+
+    const handleAddToCart = () => {
+      // Dispatch an action to add the product to the cart
+      dispatch({ type: 'ADD_TO_CART', payload: product });
+      toast.success('Item added to cart');
+
+    };
+
     const [product, setProduct] = useState(null);
     const {id}=useParams()
     console.log(id)
@@ -19,12 +33,10 @@ function SingleProductView() {
     fetchProduct();
   }, [id]);
 
-  const handleAddToCart = () => {
-    // Implement functionality to add product to the shopping cart
-    console.log('Product added to cart:', product);
-  };
+
   return (
     <>
+    <ToastContainer/>
      <div className='mx-10' style={{margin:'5%'}}>
 
      <div className="row mt-5 ">
